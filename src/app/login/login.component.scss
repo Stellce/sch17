@@ -1,0 +1,18 @@
+mat-card {
+  padding: 16pt;
+  width: 250pt;
+  // height: 250pt;
+  background: rgb(209, 209, 209);
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 750px;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
