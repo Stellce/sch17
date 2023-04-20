@@ -4,8 +4,9 @@ import { Subject } from 'rxjs';
 import { Router } from '@angular/router';
 
 import { AuthData } from './auth-data.model';
+import {environment} from "../../assets/environment";
 
-const BACKEND_URL = 'http://localhost:3000';
+const BACKEND_URL = environment.apiUrl;
 
 @Injectable({ providedIn: 'root'})
 export class AuthService {
@@ -52,7 +53,7 @@ export class AuthService {
         const expirationDate = new Date(now.getTime() +  expiresInDuration * 1000);
         this.saveAuthData(token, expirationDate, this.status);
         console.log(expirationDate);
-        this.router.navigate(['/']);
+        this.router.navigate(['/'+response.status]);
       }
     }, error => {
       this.authStatusListener.next(false);

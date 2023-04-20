@@ -1,1 +1,181 @@
-<p>admin works!</p>
+<mat-card>
+  <mat-card-content>
+    <b>Admin</b>
+  </mat-card-content>
+  <mat-card-content>
+    <p>Dodać użytkownika</p>
+    <form #userForm="ngForm" (ngSubmit)="onAddUser(userForm)">
+      <mat-form-field>
+        <input
+          matInput
+          name="status"
+          placeholder="Status"
+          #status="ngModel"
+          ngModel
+          required>
+        <mat-error *ngIf="status.invalid">Please, enter a valid email.</mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input
+          matInput
+          name="nazwisko"
+          placeholder="Nazwisko"
+          #nazwisko="ngModel"
+          ngModel
+          required>
+        <mat-error *ngIf="nazwisko.invalid">Please, enter a valid email.</mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input
+          matInput
+          name="imie"
+          placeholder="Imie"
+          #imie="ngModel"
+          ngModel
+          required>
+        <mat-error *ngIf="imie.invalid">Please, enter a valid email.</mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input
+          matInput
+          name="login"
+          placeholder="Login"
+          #login="ngModel"
+          ngModel
+          required>
+        <mat-error *ngIf="login.invalid">Please, enter a valid email.</mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input
+          matInput
+          type="email"
+          name="email"
+          placeholder="Email"
+          #email="ngModel"
+          ngModel
+          required>
+        <mat-error *ngIf="email.invalid">Please, enter a valid email.</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input
+          matInput
+          name="adres"
+          placeholder="Adres"
+          #adres="ngModel"
+          ngModel
+          required>
+        <mat-error *ngIf="adres.invalid">Please, enter a valid email.</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input
+          matInput
+          name="telefon"
+          placeholder="Telefon"
+          #telefon="ngModel"
+          ngModel
+          required>
+        <mat-error *ngIf="telefon.invalid">Please, enter a valid email.</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input
+          matInput
+          type="klasa"
+          name="klasa"
+          placeholder="Klasa"
+          #klasa="ngModel"
+          ngModel
+          required>
+        <mat-error *ngIf="klasa.invalid">Please, enter a valid email.</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input
+          matInput
+          type="password"
+          name="haslo"
+          placeholder="Haslo"
+          #haslo="ngModel"
+          ngModel
+          required>
+        <mat-error *ngIf="haslo.invalid">Please, enter a valid email.</mat-error>
+      </mat-form-field>
+      <button mat-raised-button color="primary">Submit</button>
+    </form>
+  </mat-card-content>
+
+  <mat-card-content>
+    <p>Dodac przedmiot</p>
+    <form #subjForm="ngForm" (ngSubmit)="onAddSubj(subjForm)">
+
+      <mat-form-field>
+        <input
+          matInput
+          name="nazwa"
+          placeholder="Nazwa"
+          #nazwa="ngModel"
+          ngModel
+          required>
+        <mat-error *ngIf="nazwa.invalid">Please, enter a valid email.</mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input
+          matInput
+          name="liczbaGodzin"
+          placeholder="Liczba godzin"
+          #liczbaGodzin="ngModel"
+          ngModel
+          required>
+        <mat-error *ngIf="liczbaGodzin.invalid">Please, enter a valid email.</mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input
+          matInput
+          name="tematyka"
+          placeholder="Tematyka"
+          #tematyka="ngModel"
+          ngModel
+          required>
+        <mat-error *ngIf="tematyka.invalid">Please, enter a valid email.</mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input
+          matInput
+          name="rodzaj"
+          placeholder="Rodzaj"
+          #rodzaj="ngModel"
+          ngModel
+          required>
+        <mat-error *ngIf="rodzaj.invalid">Please, enter a valid email.</mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input
+          matInput
+          name="prowadzace"
+          placeholder="Prowadzace"
+          #prowadzace="ngModel"
+          ngModel
+          required>
+        <mat-error *ngIf="prowadzace.invalid">Please, enter a valid email.</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input
+          matInput
+          name="literatura"
+          placeholder="Literatura"
+          #literatura="ngModel"
+          ngModel
+          required>
+        <mat-error *ngIf="literatura.invalid">Please, enter a valid email.</mat-error>
+      </mat-form-field>
+      <button mat-raised-button color="primary">Submit</button>
+    </form>
+  </mat-card-content>
+</mat-card>
+

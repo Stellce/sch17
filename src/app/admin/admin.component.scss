@@ -1,0 +1,21 @@
+mat-card {
+  width: 90%;
+  margin: 25px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+mat-card-content{
+  margin: 20px 0;
+}
+
+mat-form-field {
+  gap: 25px;
+  width: 200px;
+  margin: 0 25px;
+}
+
+button{
+  display: block;
+}
+

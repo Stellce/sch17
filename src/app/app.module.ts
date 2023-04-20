@@ -16,6 +16,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import {MatExpansionModule} from "@angular/material/expansion";
 
 
 @NgModule({
@@ -26,17 +27,18 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     UczenComponent,
     LoginComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    FormsModule,
-    MatCardModule,
-    MatButtonModule,
-    MatInputModule,
-    MatProgressSpinnerModule,
-    HttpClientModule,
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        FormsModule,
+        MatCardModule,
+        MatButtonModule,
+        MatInputModule,
+        MatProgressSpinnerModule,
+        HttpClientModule,
+        MatExpansionModule,
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
