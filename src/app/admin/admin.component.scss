@@ -1,8 +1,24 @@
-mat-card {
-  width: 90%;
+header mat-card {
+  width: 60%;
   margin: 25px auto;
+}
+content{
   display: flex;
+  //flex-direction: row;
   flex-wrap: wrap;
+  width: 80%;
+  margin: 20px auto;
+  gap: 20px 5px;
+}
+content mat-card {
+  width: 30%;
+  //height: 850px;
+  margin: 20px 20px;
+  flex: 1 1 auto;
+}
+
+#usun{
+  height: 300px;
 }
 
 mat-card-content{
@@ -10,12 +26,27 @@ mat-card-content{
 }
 
 mat-form-field {
-  gap: 25px;
+  //gap: 25px;
   width: 200px;
   margin: 0 25px;
 }
+//
+//mat-form-field [name="adres"]{
+//  width: 500px;
+//}
 
 button{
   display: block;
+  width: 150px;
+  height: 50px !important;
+  margin-left: 25px;
 }
 
+p{
+  font-size: 16pt;
+  margin-left: 25px;
+}
+b{
+  font-size: 20pt;
+  margin-left: 50px;
+}

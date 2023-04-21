@@ -17,6 +17,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import {MatExpansionModule} from "@angular/material/expansion";
+import { HeaderComponent } from './header/header.component';
+import {MatToolbarModule} from "@angular/material/toolbar";
 
 
 @NgModule({
@@ -25,7 +27,8 @@ import {MatExpansionModule} from "@angular/material/expansion";
     AdminComponent,
     NauczComponent,
     UczenComponent,
-    LoginComponent
+    LoginComponent,
+    HeaderComponent
   ],
     imports: [
         BrowserModule,
@@ -38,6 +41,7 @@ import {MatExpansionModule} from "@angular/material/expansion";
         MatProgressSpinnerModule,
         HttpClientModule,
         MatExpansionModule,
+        MatToolbarModule,
     ],
   providers: [],
   bootstrap: [AppComponent]
